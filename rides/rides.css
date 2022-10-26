@@ -129,7 +129,7 @@ button:hover {
   text-align: center;
   margin: 24px 0 12px 0;
 }
-/* */ 
+
 *{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -148,7 +148,8 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 0 20px;
-  /*margin: auto;*/
+  margin: 0px;
+
 }
 
 .formulario h2 {
@@ -162,3 +163,4 @@ body {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
 }
+

@@ -30,23 +30,22 @@
       </div>
 
       <div class="setting-title">
-        <p><b> Edit Ride</b></p>
+        <p><b> View ride</b></p>
 
       </div>
 
       <div class="setting-body">
         <label for="rideName"><b>Ride Name</b></label>
-        <input type="text" placeholder="Brete" name="rideName" required />
+        <input type="text" name="rideName" required  value="Brete" readonly/>
 
         <label for="start"><b>Start From</b></label>
-        <input type="text" placeholder="Barrio Los Angeles, Ciudad Quesada" name="start" required />
+        <input type="text" name="start" required value=" Barrio Los Angeles, Ciudad Quesada" readonly />
 
         <label for="end"><b>End</b></label>
-        <input type="text" placeholder="Mercado Municipal, Ciudad Quesada" name="end" required />
+        <input type="text" name="end" required value="Mercado Municipal, Ciudad Quesada" readonly />
 
         <label for="description"><b>Description</b></label>
-        <input type="text" placeholder="This is my everyday ride. from Barrio Los Angeles to my job's office in
-        Second Floor of Cooperservidores Buildong" name="description" required />
+        <input type="text" name="description" required value="Add here the description of the ride" readonly />
         <!--
           <label for="days"><b>Choose Days</b></label>
           <br />
@@ -83,11 +82,12 @@
         </div>
         <!-- -->
         <div>
+        
           <label for="description"><b>Departure</b></label>
-          <input  type="number" placeholder="6:45 AM" name="description" required />
+          <input type="number" placeholder="7:00 AM" name="description" required />
 
           <label for="description"><b>Estimated Arrival</b></label>
-          <input  type="number" placeholder="7:05 AM" name="description" required />
+          <input  type="number" placeholder="8:30 AM" name="description" required />
         </div>
         <button class="succed-button">Save</button>
         <button class="succed-button"><u> Cancel</u></button>
