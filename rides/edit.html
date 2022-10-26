@@ -34,17 +34,18 @@
 
       </div>
 
-      <div class="setting-body">
-        <label for="rideName"><b>Ride Name</b></label>
+      
+        <div class="setting-body">
+        <label id="rideName"><b>Ride Name</b></label>
         <input type="text" placeholder="Brete" name="rideName" required />
 
-        <label for="start"><b>Start From</b></label>
+        <label id="start"><b>Start From</b></label>
         <input type="text" placeholder="Barrio Los Angeles, Ciudad Quesada" name="start" required />
 
-        <label for="end"><b>End</b></label>
+        <label id="end"><b>End</b></label>
         <input type="text" placeholder="Mercado Municipal, Ciudad Quesada" name="end" required />
 
-        <label for="description"><b>Description</b></label>
+        <label id="description"><b>Description</b></label>
         <input type="text" placeholder="This is my everyday ride. from Barrio Los Angeles to my job's office in
         Second Floor of Cooperservidores Buildong" name="description" required />
         <!--
@@ -61,8 +62,8 @@
           </select>
         -->
         <div class="wrap">
-          <form action="" class="formulario">
-            <div label for="description"><b>Choose Days</b></label>
+          <div class="formulario">
+            <label id="description2"><b>Choose Days</b></label>
               <input type="checkbox" name="Monday" id="checkbox1" checked="checked">
               <label for="checkbox1">Monday</label>
               <input type="checkbox" name="Tuesday" id="checkbox2" checked="checked">
@@ -79,14 +80,14 @@
               <label for="checkbox7">Sunday</label>
 
             </div>
-          </form>
+          
         </div>
         <!-- -->
         <div>
-          <label for="description"><b>Departure</b></label>
+          <label id="description0"><b>Departure</b></label>
           <input  type="number" placeholder="6:45 AM" name="description" required />
 
-          <label for="description"><b>Estimated Arrival</b></label>
+          <label id="description1"><b>Estimated Arrival</b></label>
           <input  type="number" placeholder="7:05 AM" name="description" required />
         </div>
         <button class="succed-button">Save</button>

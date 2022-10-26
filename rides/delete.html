@@ -35,16 +35,16 @@
       </div>
 
       <div class="setting-body">
-        <label for="rideName"><b>Ride Name</b></label>
+        <label id="rideName"><b>Ride Name</b></label>
         <input type="text" placeholder="Enter Ride Name" name="rideName" required />
 
-        <label for="start"><b>Start From</b></label>
+        <label id="start"><b>Start From</b></label>
         <input type="text" placeholder="Enter where are you going to start" name="start" required />
 
-        <label for="end"><b>End</b></label>
+        <label id="end"><b>End</b></label>
         <input type="text" placeholder="Enter where are you going to end" name="end" required />
 
-        <label for="description"><b>Description</b></label>
+        <label id="description"><b>Description</b></label>
         <input type="text" placeholder="Enter a description for your ride" name="description" required />
         <!--
           <label for="days"><b>Choose Days</b></label>
@@ -59,9 +59,11 @@
             <option value="Sunday">Sunday</option>
           </select>
         -->
+       
         <div class="wrap">
-          <form action="" class="formulario">
-            <div label for="description"><b>Choose Days</b></label>
+          
+            <div  class="formulario"> 
+              <label id="description2"><b>Choose Days</b></label>
               <input type="checkbox" name="Monday" id="checkbox1">
               <label for="checkbox1">Monday</label>
               <input type="checkbox" name="Tuesday" id="checkbox2">
@@ -78,15 +80,15 @@
               <label for="checkbox7">Sunday</label>
 
             </div>
-          </form>
+          
         </div>
         <!-- -->
         <div>
-          <label for="description"><b>Departure</b></label>
-          <input type="time" type="number" placeholder="Enter time of departure" name="description" required />
+          <label id="description0"><b>Departure</b></label>
+          <input type="text"  placeholder="Enter time of departure" name="description" required />
 
-          <label for="description"><b>Estimated Arrival</b></label>
-          <input type="time" type="number" placeholder="Enter time of arrival" name="description" required />
+          <label id="description1"><b>Estimated Arrival</b></label>
+          <input type="text"  placeholder="Enter time of arrival" name="description" required />
         </div>
         <button class="succed-button">Delete Ride</button>
 
