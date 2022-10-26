@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticos ride</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <a class="active" href="dashboard.html">Dashboard</a> <!-- me lleva a la pantalla de dashboard-->
+    <a href="../rides/rides.html">Rides</a> <!--me lleva a la pantalla rides -->
+    <a href="../settings/settings.html">Settings</a> <!--me lleva a la pantalla rides -->
+    <a class="logout" href="../login/login.html">Logout</a> <!-- me desloguea y me lleva a la pagina inicial -->
+    <a class="user">barroyo</a>
+
+  </div>
+  <img src="auto.png" alt="imagen no encontrada">
+  <!--imagen de auto -->
+  <div class="flex-center"> <!-- titulo -->
+    <h1>Dashboard</h1>
+  </div>
+  <div class="flex-center"> <!-- titulo -->
+    <p><b>My rides</b></p>
+  </div>
+  <div class="flex-center"> 
+    <table> <!-- etiqueta que define la tabla de los rides -->
+      <tr>
+        <!-- columnas-->
+        <th>User</th>
+        <th>Start</th>
+        <th>End</th>
+        <th></th>
+      </tr>
+      <tr>
+        <!-- filas-->
+        <td>blaguna</td>
+        <td>Peje Viejo</td>
+        <td>Ciudad Quesada</td>
+        <td>
+          <!--ver ride -->
+          <a href="../rides/rides.html">View</a>
+          <!-- editar ride-->
+          <a href="../rides/rides.html">Edit</a> 
+          <!--eliminar ride -->
+          <a href="../rides/rides.html">Delete</a>
+          <!--agregar nuevo ride -->
+          <a href="../rides/rides.html">Add</a>
+        </td>
+      </tr>
+      <tr>
+        <td>barroyo</td>
+        <td>Ciudad Quesada</td>
+        <td>Los Angeles</td>
+        <td>
+          <!--ver ride -->
+          <a href="../rides/rides.html">View</a>
+          <!-- editar ride-->
+          <a href="../rides/rides.html">Edit</a>
+           <!--eliminar ride -->
+          <a href="../rides/rides.html">Delete</a>
+          <!--agregar nuevo ride -->
+          <a href="../rides/rides.html">Add</a>
+        </td>
+      </tr>
+      <tr>
+        <td>dugalde</td>
+        <td>Los Angeles</td>
+        <td>Terminal</td>
+        <td>
+          <!--ver ride -->
+          <a href="../rides/rides.html">View</a>
+          <!-- editar ride-->
+          <a href="../rides/rides.html">Edit</a> 
+          <!--eliminar ride -->
+          <a href="../rides/rides.html">Delete</a>
+          <!--agregar nuevo ride -->
+          <a href="../rides/rides.html">Add</a>
+        </td>
+      </tr>
+    </table> <!-- se cierra la tabla de rides-->
+  </div>
+</body>
+
+</html>

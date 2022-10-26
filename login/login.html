@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticos ride</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <!-- menu o barra de navegacion -->
+    <a class="active" href="login.html">Login</a>
+    <a href="../homepage/home.html">Home</a>
+    <a href="../register/register.html">Register</a>
+  </div>
+
+  <div class="title-container">
+    <h1>
+      <img src="auto.png" alt="imagen no encontrada">
+      <!--imagen de auto -->
+      Welcome to ticos ride
+      <hr />
+    </h1>
+  </div>
+
+  <div class="login-container">
+    <form name="form">
+      <!-- se abre el formulario para el login  -->
+      <div class="login-title">
+        <h2>Login</h2>
+      </div>
+
+      <div class="login-body">
+        <label for="userName"><b>Username</b></label>
+        <!--input para ingreso del nombre -->
+        <input type="text" placeholder="Enter Username" name="userName" required />
+
+        <label for="password"><b>Password</b></label>
+        <!--input para ingreso del contraseña -->
+        <input type="password" placeholder="Enter Password" name="password" required />
+        <!-- Input para cargar logearce, este nos lleva a la dahsboard -->
+        <input onclick="location.href='../dahsboard/dashboard.html'" type="button" class="login-button" value="Login" />
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember me
+          <!--checkbox de recordar contraseña -->
+        </label>
+      </div>
+
+      <div class="login-body" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn" onclick="validar();">Cancel</button>
+        <!--boton de cancelar login -->
+
+        <span class="psw">
+          <a href="../register/register.html">Create new account</a></span>
+        <!-- este link lleva al la pantalla de registro de usuario-->
+
+      </div>
+    </form> <!-- Cierre del formulario-->
+  </div>
+</body>
+
+</html>

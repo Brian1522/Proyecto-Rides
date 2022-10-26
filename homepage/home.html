@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticos ride</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- menu o barra de navegacion -->
+    <div id="navbar">
+      <a href="../login/login.html">Login</a>
+      <a class="active" href="home.html">Home</a>
+      <a href="../register/register.html">Register</a>
+    </div>
+
+    <div class="home-title">
+      <img src="auto.png" alt="imagen no encontrada">  <!--imagen de auto -->
+      <h1> Welcome to TicoRides.com</h1>
+      <p><b>Search for ride </b></p>
+    </div>
+    <div class="form-container">
+      <form id="form"> <!--formulario de buscar ride -->
+        <div class="input-container">
+          <div class="input-container">
+            <label for="from">From</label>
+            <input type="text" id="from" name="from" placeholder="Input text" />
+          </div>
+          <div class="input-container">
+            <label for="to">to</label>
+            <input type="text" id="to" name="to" placeholder="Input text" />
+          </div>
+          <button type="submit" class="search-button">Find my Ride!</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="home-title"><p>Results for rides that matches your criteria:</p></div>
+    <div class="input-container">
+      <table> <!-- tabla de usuarios quemados -->
+        <tr>
+          <th>User</th>
+          <th>Start</th>
+          <th>End</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>blaguna</td>
+          <td>Peje Viejo</td>
+          <td>Ciudad Quesada</td>
+          <td><a href="./home.html">View</a></td>
+        </tr>
+        <tr>
+          <td>barroyo</td>
+          <td>Ciudad Quesada</td>
+          <td>Los Angeles</td>
+          <td><a href="./home.html">View</a></td>
+        </tr>
+        <tr>
+          <td>dugalde</td>
+          <td>Los Angeles</td>
+          <td>Terminal</td>
+          <td><a href="./home.html">View</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

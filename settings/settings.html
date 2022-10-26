@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticos ride</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="../dahsboard/dashboard.html">Dashboard</a>
+      <a href="../rides/rides.html">Rides</a>
+      <a class="active" href="settings.html">Settings</a>
+      <a class="logout" href="../login/login.html">Logout</a>
+      <a class="user">barroyo</a>
+    </div>
+    <img src="auto.png" alt="imagen no encontrada">  <!--imagen de auto --> 
+    <div class="setting-container">
+      <form name="form"> <!-- se abre formulario-->
+        <div class="setting-title">
+          <h1>Settings</h1>
+        </div>
+
+        <div >
+          <label for="fullname"><b>FullName</b></label>
+          <input
+            type="text"
+            placeholder="Enter Fullname"
+            name="fullname"
+            required
+          />
+
+          <label for="speed"><b>Speed Average</b></label>
+          <input
+            type="text"
+            placeholder="Enter Speed Average"
+            name="speed"
+            required
+          />
+
+          <label for="about"><b>About Me</b></label>
+          <input
+            type="text"
+            placeholder="Enter a description about you"
+            name="about"
+            required
+          />
+        </div> 
+        <div class="setting-input"> 
+          <input class="settin"
+            onclick="go()"
+            type="button"
+            class="login-button"
+            value="Cancelar"
+          />
+          <input class="settin"
+            onclick="go()"
+            type="button"
+            class="login-button"
+            value="Save"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

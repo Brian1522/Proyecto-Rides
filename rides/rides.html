@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticos ride</title>
+  <link rel="stylesheet" href="rides.css" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+  <div id="navbar"> <!-- menu o barra de navegacion-->
+    <a href="../dahsboard/dashboard.html">Dashboard</a>
+    <a class="active" href="rides.html">Rides</a>
+    <a href="../settings/settings.html">Settings</a>
+    <a class="logout" href="../login/login.html">Logout</a>
+    <a class="user">barroyo</a> <!-- usuario quemado-->
+
+  </div>
+
+  <div class="setting-container">
+    <form name="form"> <!-- formulario crear ride  -->
+      <div class="setting-title">
+        <img src="auto.png" alt="imagen no encontrada">
+        <!--imagen de auto -->
+        <h1>Rides</h1>
+      </div>
+
+      <div class="setting-title">
+        <p><b> Creating a new ride</b></p>
+
+      </div>
+
+      <div class="setting-body">
+        <label for="rideName"><b>Ride Name</b></label>
+        <input type="text" placeholder="Enter Ride Name" name="rideName" required />
+
+        <label for="start"><b>Start From</b></label>
+        <input type="text" placeholder="Enter where are you going to start" name="start" required />
+
+        <label for="end"><b>End</b></label>
+        <input type="text" placeholder="Enter where are you going to end" name="end" required />
+
+        <label for="description"><b>Description</b></label>
+        <input type="text" placeholder="Enter a description for your ride" name="description" required />
+        <!--
+          <label for="days"><b>Choose Days</b></label>
+          <br />
+          <select name="days" id="days" multiple>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        -->
+        <div class="wrap">
+          <form action="" class="formulario">
+            <div label for="description"><b>Choose Days</b></label>
+              <input type="checkbox" name="Monday" id="checkbox1">
+              <label for="checkbox1">Monday</label>
+              <input type="checkbox" name="Tuesday" id="checkbox2">
+              <label for="checkbox2">Tuesday</label>
+              <input type="checkbox" name="Wednesday" id="checkbox3">
+              <label for="checkbox3">Wednesday</label>
+              <input type="checkbox" name="Thursday" id="checkbox4">
+              <label for="checkbox4">Thursday</label>
+              <input type="checkbox" name="Friday" id="checkbox5">
+              <label for="checkbox5">Friday</label>
+              <input type="checkbox" name="Saturday" id="checkbox6">
+              <label for="checkbox6">Saturday</label>
+              <input type="checkbox" name="Sunday" id="checkbox7">
+              <label for="checkbox7">Sunday</label>
+
+            </div>
+          </form>
+        </div>
+        <!-- -->
+        <div>
+          <label for="description"><b>Departure</b></label>
+          <input type="time" type="number" placeholder="Enter time of departure" name="description" required />
+
+          <label for="description"><b>Estimated Arrival</b></label>
+          <input type="time" type="number" placeholder="Enter time of arrival" name="description" required />
+        </div>
+        <button class="succed-button">Create Ride</button>
+        <!-- <button class="succed-button" onclick="validar();">Create Ride</button> -->
+        <button class="succed-button">Edit Ride</button>
+        <button class="succed-button">View Ride</button>
+        <button class="succed-button">Delete Ride</button>
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticos ride</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+
+<body>
+  <!-- menu o barra de navegacion-->
+  <div id="navbar">
+    <a href="../login/login.html">Login</a>
+    <a href="../homepage/home.html">Home</a>
+    <a class="active" href="register.html">New account</a>
+  </div>
+
+  <div class="title-container">
+    <h1>
+      <img src="auto.png" alt="imagen no encontrada">
+      <!--imagen de auto -->
+      Welcome to ticos ride
+    </h1>
+  </div>
+  <div class="login-container">
+    <form name="form"> <!-- formulario  para crear nuevo ride-->
+      <div class="login-title">
+        <h2>Create new account</h2>
+      </div>
+
+      <div class="login-body">
+        <label for="firstName"><b>First name</b></label> <!-- labels con sus respectivos inputs-->
+        <input type="text" placeholder="Enter First name" name="firstName" required />
+
+        <label for="lastName"><b>Last name</b></label>
+        <input type="text" placeholder="Enter Last name" name="lastName" required />
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="text" placeholder="(xxx) xxx-xxxx" name="phone" required />
+
+        <label for="userName"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="userName" required />
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required />
+
+        <label for="secondPassword"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Enter Password Again" name="secondPassword" required />
+        <!-- boton para crear cuenta-->
+        <input onclick="go()" type="button" class="login-button" value="Create account" />
+        <span class="psw">
+          <a href="../login/login.html">Already have an account</a></span>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
